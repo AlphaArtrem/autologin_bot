@@ -1,6 +1,6 @@
 # **Name**
 Login_Bot
-Autologin bot to brute-force using a csv file containing list of usernames/id's and passwords.
+Autologin bot is to brute-force using a csv file containing list of usernames/id's and passwords.
 
 # **Description**
 This is a automation script to pass multiple logins cridentials  on any webpage stored in a `.csv file`.
